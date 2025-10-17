@@ -5,10 +5,10 @@ answer = True
 x = lst[0]
 lst1 = (string.punctuation)
 lst3 = (keyword.kwlist)
-char = "_"
+char = "__"
 count = lst.count(char)
 lst2 = lst1.replace(char, "")
-if  (x.isalpha() and x.islower()) and x not in lst2 and x not in lst3 and count <= 1:
+if  (x.isalpha() and x.islower()) and x not in lst2 and x not in lst3 and char != "__":
     answer = True
 else:
     answer = False
